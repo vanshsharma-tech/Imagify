@@ -74,7 +74,7 @@ const AppContextProvider = ({ children }) => {
     } else {
       toast.error("Unexpected error occurred");
     }
-  }
+  } 
 };
 
 

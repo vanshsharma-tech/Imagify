@@ -9,7 +9,7 @@ const port = process.env.PORT || 4000;
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173", // or your frontend domain
+  origin: "https://imagifyin.netlify.app", // or your frontend domain
   credentials: true,
 }));
 connectDB()
