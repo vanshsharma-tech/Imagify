@@ -54,7 +54,7 @@ const Results = () => {
           />
           <button
             type="submit"
-            className="bg-zinc-900 px-10 sm:px-16 py-3 rounded-full "
+            className="bg-zinc-900 px-10 sm:px-16 py-3 rounded-full cursor-pointer"
           >
             Generate
           </button>
@@ -66,6 +66,7 @@ const Results = () => {
           <p
             onClick={() => {
               setIsImageLoaded(false);
+              setInput("");
             }}
             className="bg-transparent border border-zinc-900 text-black px-8 py-3 rounded-full cursor-pointer"
           >
@@ -74,7 +75,7 @@ const Results = () => {
           <a
             href={image}
             download
-            className="bg-zinc-900 px-10 py-3 rounded-full cursor-pointer"
+            className="bg-zinc-800 hover:bg-zinc-900 px-10 py-3 rounded-full cursor-pointer"
           >
             Download
           </a>
